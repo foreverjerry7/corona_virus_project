@@ -1,0 +1,18 @@
+import json
+import nltk
+tweets = []
+for line in open("/Users/jerry/Desktop/corona/20200307/123", "r"):
+    tweets.append(json.loads(line))
+
+new_tweet = []
+for entry in tweets:
+    entry = dict((key, value) for key, value in entry.iteritems() if key == 'full_text')
+    new_tweet.append(entry)
+
+from nltk.tokenize import word_tokenize
+
+for item in new_tweet:
+    item["full_text"] = nltk.pos_tag(word_tokenize(item["full_text"]))
+    for i in item["full_text"]:
+        if i[1] == 'JJ':
+            print i[0]
