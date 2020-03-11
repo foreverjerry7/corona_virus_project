@@ -1,0 +1,17 @@
+{
+   "keyword_list_0": {
+      "geocode": null,
+      "terms": [
+         "\"#Coronavirus\"",
+         "\"#2019nCov\"",
+         "\"#CovID19\"",
+         "\"Corona virus\"",
+         "\"coronavirus\"",
+         "\"#2019cov\"",
+         "\"covid19\"",
+         "\"#covid19\""
+      ],
+      "since_id": 0,
+      "querystring": "(\"#Coronavirus\") OR (\"#2019nCov\") OR (\"#CovID19\") OR (\"Corona virus\") OR (\"coronavirus\") OR (\"#2019cov\") OR (\"covid19\") OR (\"#covid19\")"
+   }
+}
